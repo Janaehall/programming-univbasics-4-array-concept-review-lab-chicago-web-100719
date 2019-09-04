@@ -1,7 +1,7 @@
 def find_element_index(array, value_to_find)
   array.each do |v|
-    if v == value_to_find
-      return array.index(v)
+    if value_to_find.is_in?(array)
+      array.index(value_to_find)
     else
       nil
     end
