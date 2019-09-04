@@ -1,13 +1,11 @@
 def find_element_index(array, value_to_find)
+  new_value = nil
   array.each do |v|
     if array.include?(value_to_find)
-      value = array.index(value_to_find)
-    else
-      value = nil
+      new_value = array.index(value_to_find)
     end
-    value
   end
-  value
+  new_value
 end
 
 def find_max_value(array)
