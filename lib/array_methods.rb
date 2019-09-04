@@ -1,8 +1,6 @@
 def find_element_index(array, value_to_find)
-  new_value = Array.new
-  array.each do |v|
     if array.include?(value_to_find)
-      new_value << array.index(value_to_find)
+      new_value = array.index(value_to_find)
     end
   end
   new_value
