@@ -1,6 +1,6 @@
 def find_element_index(array, value_to_find)
   array.each do |v|
-    if value_to_find.is_in?(array)
+    if value_to_find.appears_in?(array)
       array.index(value_to_find)
     else
       nil
